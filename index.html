@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoSnap – AI Waste Impact Scanner</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>EcoSnap</h1>
+            <p>AI Waste Impact Scanner</p>
+        </header>
+
+        <main>
+            <h1>EcoSnap Waste Scanner</h1>
+
+            <!-- Upload Section -->
+            <div class="upload-section">
+                <input type="file" id="imageInput" accept="image/*" hidden>
+
+                <button id="uploadBtn" class="upload-btn">
+                    <span class="icon">📸</span>
+                    <span class="text">Upload Image</span>
+                </button>
+
+                <div id="imagePreview" class="image-preview hidden">
+                    <img id="previewImg" src="" alt="Waste Preview">
+                </div>
+            </div>
+
+            <button id="scanBtn">Scan Waste</button>
+
+            <div id="loading" class="loading hidden">
+                <div class="spinner"></div>
+                <p>Scanning waste...</p>
+            </div>
+
+            <div id="results" class="results hidden">
+                <h2>Scan Complete</h2>
+                <div class="result-card">
+                    <h3>Type: <span id="wasteType"></span></h3>
+                    <p><strong>Impact:</strong> <span id="wasteImpact"></span></p>
+                    <p><strong>Disposal:</strong> <span id="wasteDisposal"></span></p>
+                </div>
+                <button id="resetBtn" class="reset-btn">Scan Another Item</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
