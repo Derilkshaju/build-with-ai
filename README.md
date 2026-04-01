@@ -85,7 +85,8 @@ Upload your demo video to Google Drive and paste the shareable link here(max 3 m
 git clone https://github.com/Derilkshaju/Ecosnap.git
 
 # Go to project folder
-cd project-name
+cd project-Ecosnap
+
 
 # Install dependencies
 npm install
